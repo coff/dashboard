@@ -2,9 +2,7 @@
 
 namespace Casadatos\Component\Dashboard\Exception;
 
-use Casadatos\Common\Exception\CasadatosException;
-
-class DashboardException extends CasadatosException
+class DashboardException extends \Exception
 {
 
 }

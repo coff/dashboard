@@ -1,3 +1,5 @@
 # CHANGELOG
 
-## dev-testing
+## 0.0.2
+
+Dropped casadatos-common dependency.

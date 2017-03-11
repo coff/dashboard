@@ -1,13 +1,8 @@
 {
   "name": "casadatos/dashboard",
   "repositories": [
-    {
-      "type": "vcs",
-      "url": "ssh://git@git.bof.cm.local/casadatos/casadatos-common.git"
-    }
   ],
   "require": {
-    "casadatos/common": "dev-testing"
   },
   "require-dev": {
     "phpunit/phpunit": "4.2.*"

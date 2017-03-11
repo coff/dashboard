@@ -2,7 +2,7 @@
 
 namespace Casadatos\Component\Dashboard\Gauge;
 
-use Casadatos\Common\Exception\CasadatosException;
+use Casadatos\Component\Dashboard\Exception\DashboardException;
 
 class ProgressBarGauge extends Gauge
 {
@@ -25,7 +25,7 @@ class ProgressBarGauge extends Gauge
         $this->maxValue = $maxValue;
 
         if ($this->maxValue == 0) {
-            throw new CasadatosException('maxValue must be other than 0');
+            throw new DashboardException('maxValue must be other than 0');
         }
 
         if ($this->decimalPlaces > 0) {
