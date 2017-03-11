@@ -2,6 +2,7 @@
 
 namespace Casadatos\Component\Dashboard;
 
+use Casadatos\Component\Dashboard\Exception\DashboardException;
 use Casadatos\Component\Dashboard\Gauge\Gauge;
 
 class ConsoleDashboard extends Dashboard
@@ -65,6 +66,10 @@ class ConsoleDashboard extends Dashboard
 
     public function printHeaders() {
         $headers = $this->getHeaders();
+
+        if (!$this->gauges) {
+            throw new DashboardException('No gauges added!');
+        }
 
         $frames = array();
         foreach ($this->gauges as $gauge) {
